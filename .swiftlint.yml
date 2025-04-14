@@ -1,0 +1,5 @@
+disabled_rules:
+  - identifier_name
+
+type_name:
+  min_length: 2
