@@ -1,0 +1,32 @@
+ColorImage DEFINITIONS ::= BEGIN
+
+  RgbColor ::= SEQUENCE {
+    red REAL,
+    green REAL,
+    blue REAL
+  }
+
+  -- A string representation of CIColor.
+  -- Example: @"0.5 0.7 0.3 1.0"
+  RgbaColorString ::= IA5String
+
+  PresetColor ::= ENUMERATED {
+    unspecified (0),
+    black (1),
+    blue (2),
+    clear (3),
+    cyan (4),
+    gray (5),
+    green (6),
+    magenta (7),
+    red (8),
+    white (9),
+    yellow (10)
+  }
+
+  ImageSize ::= SEQUENCE {
+    width INTEGER,
+    height INTEGER
+  }
+
+END
